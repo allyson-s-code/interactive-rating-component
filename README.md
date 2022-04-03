@@ -53,7 +53,7 @@ Users should be able to:
 
 I learned a lot with this project. It's a very basic project but it was very helpfull for me in gaining confidence building the html, css, and interactive components from the ground up (with just a jpeg design file) and away from tutorials.
 
-I tried to make my component accessible by creating labels for the buttons in the form element in html. This is my first time doing this and I hope that it adds to the functionality for the users. I also learned that the rating buttons and submit buttons default setting causes the page to reload upon "click" so that took some research. In the end I added `type="button"` to my `button` element and `onclick="return false;"` to my submit button to keep the page from automatically refreshing.
+I tried to make my component accessible by creating labels for the buttons in the form element in html. This is my first time doing this and I hope that it adds to the functionality for the users. I also learned that the rating buttons and submit buttons default setting causes the page to reload upon "click" so that took some research. In the end I added `e.preventDefault();` to each of my event handlers.
 
 I also learned a new css trick to keep my `:active` button style after click:
 
