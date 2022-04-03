@@ -26,7 +26,7 @@
   <body>
     <main>
       <!-- Rating state start -->
-      <div class="rating-state-container hide">
+      <div class="rating-state-container">
         <img src="images/icon-star.svg" alt="star icon" />
         <h1>How did we do?</h1>
         <p>
@@ -37,29 +37,29 @@
         <form class="rating-form">
           <div class="rating-button-group">
             <label for="1">
-              <button id="1">1</button>
+              <button id="1" value="1" class="rating-button">1</button>
             </label>
             <label for="2">
-              <button id="2">2</button>
+              <button id="2" value="2" class="rating-button">2</button>
             </label>
             <label for="3">
-              <button id="3">3</button>
+              <button id="3" value="3" class="rating-button">3</button>
             </label>
             <label for="4">
-              <button id="4">4</button>
+              <button id="4" value="4" class="rating-button">4</button>
             </label>
             <label for="5">
-              <button id="5">5</button>
+              <button id="5" value="5" class="rating-button">5</button>
             </label>
           </div>
-          <input type="submit" value="Submit" class="submit-button" />
+          <input type="submit" value="submit" class="submit-button" />
         </form>
       </div>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
 
-      <div class="thankyou-state-container">
+      <div class="thankyou-state-container hide">
         <img
           src="images/illustration-thank-you.svg"
           alt="illustration of receipt printing"
