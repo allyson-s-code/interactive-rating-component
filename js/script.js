@@ -6,15 +6,21 @@ const userRating = document.querySelector(".survey-result-text .rating");
 
 //click event and obtain value of rating and update survey result text in thank you state
 for (const button of ratingButtons) {
-  button.addEventListener("click", function () {
+  button.addEventListener("click", function (e) {
+    e.preventDefault;
     const value = button.value;
-    button.classList.add("button.active");
     userRating.innerText = `${value}`;
+    submitButton.disabled = false;
   });
 }
 
+//prevent user from submitting without rating
+submitButton.disabled = true;
+
 //submit user rating value and show thank you state
-submitButton.addEventListener("click", function () {
+//prevent default page reloading
+submitButton.addEventListener("click", function (e) {
+  e.preventDefault();
   ratingState.classList.add("hide");
   thankYouState.classList.remove("hide");
 });
